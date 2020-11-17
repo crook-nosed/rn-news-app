@@ -10,6 +10,11 @@ class Headline extends Component {
         this.data = props.data;
     }
 
+    handlePress = () => {
+        const {url, title} = this.data;
+        this.props.onPress({url, title});
+      }
+
     render() {
         return (
             <ListItem thumbnail>
@@ -25,7 +30,7 @@ class Headline extends Component {
                 </View>
                 </Body>
                 <Right>
-                    <Button transparent>
+                    <Button transparent onPress={this.handlePress}>
                     <Text>View</Text>
                     </Button>
                 </Right>

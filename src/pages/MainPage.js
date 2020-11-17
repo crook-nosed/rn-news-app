@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, Tab, Tabs,Left,Right,Body,Title,Thumbnail } from 'native-base';
-import TabCategory1 from './tabs/TabCategory1';
-import TabCategory2 from './tabs/TabCategory2';
-import TabCategory3 from './tabs/TabCategory3';
+import General from './tabs/GeneralCategory';
+import Sports from './tabs/SportsCategory';
+import Tech from './tabs/TechCategory';
 export default class TabsExample extends Component {
   render() {
     return (
@@ -16,13 +16,13 @@ export default class TabsExample extends Component {
         </Header>
         <Tabs>
           <Tab heading="General">
-            <TabCategory1 />
+            <General />
           </Tab>
           <Tab heading="Sports">
-            <TabCategory2 />
+            <Sports />
           </Tab>
           <Tab heading="Technology">
-            <TabCategory3 />
+            <Tech />
           </Tab>
         </Tabs>
       </Container>
