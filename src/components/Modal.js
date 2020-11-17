@@ -16,7 +16,7 @@ export default class ModalComponent extends Component {
 
     handleShare = () => {
         const {url, title} = this.props.articleData;
-        const message = `${title}\n\nRead More @${url}\n\nShared via NL News Shorts`;
+        const message = `${title}\n\nRead More @ ${url}\n\nShared via NL News Shorts`;
         return Share.share(
             {title, message, url: message},
             {dialogTitle:`Share ${title}`}
